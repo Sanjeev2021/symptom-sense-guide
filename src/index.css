@@ -4,12 +4,11 @@
 @tailwind utilities;
 
 body {
-  @apply font-sans bg-main-gradient min-h-screen;
-  /* simple glass morphism section style */
+  @apply font-sans bg-gradient-to-tr from-[#e8e6ff] via-[#ddf7ff] to-[#f4e6ed] min-h-screen;
 }
 
 .glass {
-  @apply bg-white/60 backdrop-blur-lg border border-white/30 shadow-card;
+  @apply bg-white/70 backdrop-blur-2xl border border-[#b6a3e0]/30 shadow-[0_10px_30px_0_rgba(155,135,245,0.09)];
 }
 
 .animate-fade-in {
@@ -23,4 +22,13 @@ body {
 
 #root {
   min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #efeaff;
+}
+::-webkit-scrollbar-thumb {
+  background: #cfc4fd;
+  border-radius: 4px;
 }
